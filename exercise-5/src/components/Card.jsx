@@ -7,9 +7,11 @@ function Card({ item }) {
       className="place-item"
       style={{ border: "1px solid purple" }}
     >
-      <img src={item.image} alt={item.name} />
-      <h3 style={{ color: "black" }}>{item.name}</h3>
-      <p style={{ paddingLeft: "10px" }}>${item.price}</p>
+      <button>
+        <img src={item.image} alt={item.name} />
+        <h3 style={{ color: "black" }}>{item.name}</h3>
+        <h2 style={{ paddingLeft: "10px" }}>${item.price}</h2>
+      </button>
     </li>
   );
 }
